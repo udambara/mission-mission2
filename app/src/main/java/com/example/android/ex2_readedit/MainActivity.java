@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity implements TextView.OnEditor
     }
 
     void init(){
+
         etinput = (EditText)findViewById(R.id.et_input);
         tvoutput = (TextView)findViewById(R.id.tv_output);
         btnsave = (Button)findViewById(R.id.btn_save);
-
         etinput.setOnEditorActionListener(this);
     }
 
