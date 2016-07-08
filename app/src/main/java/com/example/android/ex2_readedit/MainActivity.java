@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity implements TextView.OnEditor
         String input = etinput.getText().toString();
         tvoutput.setText(input);
         view = this.getCurrentFocus();
-
         if (view != null) {
             InputMethodManager imm = (InputMethodManager)getSystemService(this.INPUT_METHOD_SERVICE);
             imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
